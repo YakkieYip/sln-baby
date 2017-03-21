@@ -20,8 +20,8 @@ $whitetext: #fff; // sign in, sign up free, secondary-CTA banner text
 $springblue: #4bafe3; // header background, watch video icon, prize value description 
 
 // Header / Hero
-$smokegrey: #515d65; // hero h1
-$lightgrey: #66757f; // hero h2
+$smokegrey: #515d65; // hero h1, winner h1
+$lightgrey: #66757f; // hero h2, winner h2
 
 // Winner Small Cards
 $winnername: #7c8288; // winner name
@@ -73,13 +73,9 @@ ul {
 	}
 }
 
-
-
 img {
 	max-width: 100%;
 }
-
-
 
 a {
 	text-decoration: none;

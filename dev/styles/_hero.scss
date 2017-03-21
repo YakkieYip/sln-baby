@@ -17,13 +17,19 @@
 		.hero__lrg-card, .hero__lrg-img--container {
 			width: 50%;
 		}
+
+		.hero__lrg-img--container {
+			background: url('/public/images/featured-winner-hero.png') no-repeat center center;
+			background-size: cover;
+		}
 	}
 
 	.hero__lrg-card {
 		padding: 0.5rem 4.8rem;
-		
+		// border: 1px solid blue;
 		h1 {
 			@include fontSize(45, 400);
+			color: $smokegrey;
 			margin-top: 3rem;
 			margin-bottom: 0;
 		}
@@ -31,25 +37,43 @@
 		h2 {
 			@include fontSize(20, 400);
 			font-family: 'Helvetica Neue', 'Roboto', Helvetica, Arial, sans-serif;
+			color: $lightgrey;
 			padding-right: 1rem;
 			line-height: 3rem;
 			margin: 2.8rem 0;
 		}
 
-		i {
-			color: $springblue;
-			font-size: 3.3rem;
-		}
-
-
 		.watchVid__container {
+			color: $springblue;
 			display: flex;
+			flex-wrap: nowrap;
+			padding-bottom: 2rem;
+
+			i {
+				@include fontSize(33, 400);
+				margin-right: 1rem;
+				position: relative;
+				top: 0.8rem;
+				left: 0;
+			}
+
+			p {
+				@include fontSize(16, 400);
+				// margin: 1rem 0;
+				// color: $springblue;
+			}
 		}
 	}
 
 
 	.hero__lrg-img--container {
 		position: relative;
+		
+		a {
+			width: 100%;
+			display: inline-block;
+			height: 100%;
+		}
 
 		i {
 
