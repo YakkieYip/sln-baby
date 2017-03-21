@@ -1,0 +1,104 @@
+// --------------------------------------------------------
+// MIXINS
+// --------------------------------------------------------
+
+@mixin fontSize($number, $weight) {
+	font-size: $number * 1px;
+	font-size: ($number / 10) * 1rem;
+	font-weight: ($weight);
+}
+
+// Montserrat, Roboto, and Helvetica Neue
+
+// --------------------------------------------------------
+// CLB PAGE COLOR CODE BOX
+// --------------------------------------------------------
+
+// Multi-Usage
+$eggshell: #f5f5f5; // main background color
+$whitetext: #fff; // sign in, sign up free, secondary-CTA banner text
+$springblue: #4bafe3; // header background, watch video icon, prize value description 
+
+// Header / Hero
+$smokegrey: #515d65; // hero h1
+$lightgrey: #66757f; // hero h2
+
+// Winner Small Cards
+$winnername: #7c8288; // winner name
+$winnerloc: #66757f; // winner location
+$winnerdesc: #66757f; // winner description
+
+// CTA Banner / Social Media
+$facebook: #3b5998; // facebook sign up button
+$email: #3bd573; // email sign up button
+
+// Footer
+$address: #8899a6; // address text
+
+// --------------------------------------------------------
+// IMPORT STYLE SHEETS
+// --------------------------------------------------------
+
+@import "setup";
+@import "header";
+@import "hero";
+@import "winners";
+@import "clbBanner";
+
+// --------------------------------------------------------
+// MAIN GLOBAL STYLES
+// --------------------------------------------------------
+
+// set default font-size to (base) 10px
+html {
+	font-size: 62.5%;
+}
+
+body {
+	@include fontSize(16, 400);
+	// font-family: 'Helvetica Neue', 'Roboto', Helvetica, Arial, sans-serif;
+	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+}
+
+// h1, h2, h3, h4, h5, h6 {
+// 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+// }
+
+ul {
+	margin: 0;
+	padding: 0;
+	li {
+		list-style: none;
+		margin: 0;
+	}
+}
+
+
+
+img {
+	max-width: 100%;
+}
+
+
+
+a {
+	text-decoration: none;
+	
+	&:hover{
+		text-decoration: underline;
+	}
+}
+
+.wrapper {
+	max-width: 1100px;
+	margin: 0 auto;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+nav img, footer img {
+	max-width: 7.6rem;
+	max-height: 3.2rem;
+}

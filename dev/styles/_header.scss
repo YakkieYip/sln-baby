@@ -1,0 +1,56 @@
+// --------------------------------------------------------
+// HEADER STYLES
+// --------------------------------------------------------
+
+header {
+	background: $springblue;
+
+	nav {
+		display: flex;
+		justify-content: space-between;
+		flex-direction: row;
+		flex-wrap: nowrap;
+	}
+
+	.navContainerL {
+		padding: 0.8rem 0;
+	}
+	
+	.navContainerR {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		flex-wrap: nowrap;
+	}
+
+	p {
+		
+		a {
+			@include fontSize(10, 400);
+			color: $whitetext;
+		}
+		
+		&:first-child {
+			a {
+				margin-right: 4rem;
+			}
+		}
+
+		&:last-child  {
+			a {
+					// color: $whitetext;
+				border-radius: 0.5rem;
+				border: 0.2rem solid white;
+				padding: 1rem 1.8rem;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+

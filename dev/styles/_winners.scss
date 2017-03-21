@@ -1,0 +1,29 @@
+.winners {
+	.wrapper {
+		// padding: 0 2.5rem;	
+	}
+	.winners--blurb {
+		text-align: center;
+	}
+}
+
+
+
+.winnersList {
+	// width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding: 0 2.5rem;
+
+	li {
+		margin: 0 1.5rem;
+		width: calc(50% - 30px);
+		// border: 1px solid blue;
+
+		.sml-img-container {
+
+		}
+	}
+}
+
