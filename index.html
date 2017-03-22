@@ -6,7 +6,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto" rel="stylesheet">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-	<link rel="stylesheet" href="public/styles/style.css">
+	<link href="public/styles/lity.css" rel="stylesheet">
+	<link href="public/styles/style.css" rel="stylesheet" >
 </head>
 <body>
 	<!-- Header + Nav -->
@@ -39,15 +40,19 @@
 
 						<h2>Our grand prize winner of Canada’s Luckiest Baby 5 took home over $50,000 in prizing.</h2>
 				
-						<div class="watchVid__container">
-							<i class="fa fa-play-circle-o" aria-hidden="true"></i>
-							<p>Watch Video</p>
+						<div class="watchVid">
+							<a href="https://www.youtube.com/watch?v=IiE-4GZneFk&list=PLkdgIMKT4Cavlo0hzNSyhfhm-fAjaWX1j&index=5" data-lity>
+								<div class="watchVid__container">
+									<i class="fa fa-play-circle-o" aria-hidden="true"></i>
+									<p>Watch Video</p>
+								</div>
+							</a>
 						</div>
-					</div>
+					</div> <!-- ./hero__lrg-card-->
 
 					<!-- IMG Popup -->
 					<div class="hero__lrg-img--container">
-						<a href="https://www.youtube.com/watch?v=IiE-4GZneFk&list=PLkdgIMKT4Cavlo0hzNSyhfhm-fAjaWX1j&index=5">
+						<a href="https://www.youtube.com/watch?v=IiE-4GZneFk&list=PLkdgIMKT4Cavlo0hzNSyhfhm-fAjaWX1j&index=5" data-lity>
 							<i class="fa fa-play-circle-o" aria-hidden="true"></i>
 							<!-- <img src="public/images/featured-winner-hero.png" alt=""> -->
 						</a>
@@ -67,21 +72,24 @@
 				<!-- Winners Small Cards List -->
 				<ul class="winnersList">
 					<li class="winnersList__sml-card">
-						<div class="sml-card-container">
-							<div class="sml-img-container">
-								<img src="public/images/clb1winner_desktop.png" alt="">
-							</div>
+						<a href="https://www.youtube.com/watch?v=CaNlUpAk8R0&list=PLkdgIMKT4Cavlo0hzNSyhfhm-fAjaWX1j" data-lity>
+							<div class="sml-card-container">
+								<div class="sml-img-container">
+									<img src="public/images/clb1winner_desktop.png" alt="">
+								</div>
 
-							<div class="sml-blurb-container">
-								<h3>Kristine Rowley</h3>
-								<h4>Newcastle, Ontario</h4>
-								<p>Our first CLB winner had two big surprises at her gender reveal party.</p>
-								<h5>Prize Value: Over $50,000</h5>
+								<div class="sml-blurb-container">
+									<h3>Kristine Rowley</h3>
+									<h4>Newcastle, Ontario</h4>
+									<p>Our first CLB winner had two big surprises at her gender reveal party.</p>
+									<h5>Prize Value: Over $50,000</h5>
+								</div>
 							</div>
-						</div>
+						</a>
 					</li>
 
 					<li class="winnersList__sml-card">
+					<a href="https://www.youtube.com/watch?v=zYPoLqpwS-8&index=2&list=PLkdgIMKT4Cavlo0hzNSyhfhm-fAjaWX1j" data-lity>
 						<div class="sml-card-container">
 							<div class="sml-img-container">
 								<img src="public/images/clb2winner_desktop.png" alt="">
@@ -94,9 +102,11 @@
 								<h5>Prize Value: Over $30,000</h5>
 							</div>
 						</div>
+					</a>
 					</li>
 
 					<li class="winnersList__sml-card">
+					<a href="https://www.youtube.com/watch?v=UhqWTIGcoKk&list=PLkdgIMKT4Cavlo0hzNSyhfhm-fAjaWX1j&index=3" data-lity>
 						<div class="sml-card-container">
 							<div class="sml-img-container">
 								<img src="public/images/clb3winner_desktop.png" alt="">
@@ -109,9 +119,11 @@
 								<h5>Prize Value: Over $70,000</h5>
 							</div>
 						</div>
+						</a>
 					</li>
 
 					<li class="winnersList__sml-card">
+					<a href="https://www.youtube.com/watch?v=hfHhbHvUIc0&list=PLkdgIMKT4Cavlo0hzNSyhfhm-fAjaWX1j&index=4" data-lity>
 						<div class="sml-card-container">
 							<div class="sml-img-container">
 								<img src="public/images/clb4winner_desktop.png" alt="">
@@ -125,6 +137,7 @@
 							</div>
 						</div>
 					</li>
+					</a>
 				</ul>
 
 			</div>
@@ -169,7 +182,7 @@
 	
 
 	<!-- Join Canada’s Luckiest Baby 6 Today! -->
-
+	<script src="public/scripts/lity.js"></script>
 	<script src="public/scripts/main.js"></script>
 </body>
 </html>

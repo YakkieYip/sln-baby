@@ -43,12 +43,18 @@
 			line-height: 3rem;
 			margin: 2.8rem 0;
 		}
+		
 
+		.watchVid {
+			a {
+				text-decoration: none;
+			}
+		}
 		.watchVid__container {
 			color: $springblue;
 			display: flex;
 			flex-wrap: nowrap;
-			padding-bottom: 2rem;
+			margin-bottom: 2rem;
 
 			i {
 				@include fontSize(33, 400);

@@ -23,6 +23,8 @@
 	}
 }
 
+// Winners Small Cards List
+
 .winnersList {
 	// padding: 0 2.5rem;
 	display: flex;
@@ -43,6 +45,10 @@
 	
 		// 	}
 		// }
+		a {
+			display: inline-block;
+			text-decoration: none;
+		}
 
 		.sml-img-container {
 			width: 45%;
@@ -57,7 +63,7 @@
 
 .sml-card-container {
 	background: $whitetext;
-	    display: flex;
+	 display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
