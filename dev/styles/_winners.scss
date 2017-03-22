@@ -24,39 +24,35 @@
 }
 
 .winnersList {
-	// width: 100%;
-	// display: flex;
-	// flex-direction: row;
-	// flex-wrap: wrap;
-	// justify-content: space-around;
 	// padding: 0 2.5rem;
 	display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding-top: 30px;
-    // padding: 0 25px;
+    padding-top: 3rem;
 
 	li {
-		min-height: 168px;
-    // border: 1px solid blue;
 		margin: 0 1.5rem 3rem;
-		// max-width: 500px;
 		width: calc(50% - 30px);
-		// border: 1px solid blue;
+
+		&:nth-child(3), &:nth-child(4) {
+			margin-bottom: 0;
+		}
+
+		// &:nth-child(4) {
+		// 	.sml-blurb-container {
+	
+		// 	}
+		// }
 
 		.sml-img-container {
-			// width: 61%;
 			width: 45%;
-			// height: 100%;
+			
 			img {
 				height: auto;
-				height: 100%;
-				// height: auto;
+				height: 100%;	
 			}
-			// height: auto;
 		}
 	}
-
 }
 
 .sml-card-container {
@@ -68,25 +64,32 @@
 		
 	.sml-blurb-container {
 		width: 55%;
-		// padding: 3rem 0;
+		padding: 2.4rem 2.7rem 2.4rem 3rem;
+
 		// winner name
 		h3 {
 			@include fontSize(16, 700);
 			color: $winnername;
+			margin: 0 0 1rem;
+
 		}
 		//winner location
 		h4 {
 			@include fontSize(13, 400);
 			color: $winnerloc;
+			margin: 0 0 2rem;
 		}
 		p {
 			@include fontSize(13, 400);
 			font-family: 'Helvetica Neue', 'Roboto', Helvetica, Arial, sans-serif;
+			line-height: 2rem;
 			color: $winnerdesc;
+			margin: 0 0 2rem;
 		}
 		h5 {
 			@include fontSize(14, 400);
 			color: $springblue;
+			margin: 0;
 		}
 	}
 } 

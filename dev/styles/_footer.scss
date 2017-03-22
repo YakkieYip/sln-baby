@@ -1,0 +1,40 @@
+footer {
+	background: $eggshell;
+	padding: 3.2rem 0;
+
+	.wrapper {
+		text-align: center;
+		// border: 1px solid blue;
+
+	}
+
+
+	p {
+		@include fontSize(11, 400);
+		color: $address;
+	}
+	
+	.siteLinks {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		margin-bottom: 1rem;
+
+		// li {
+		// 	&:nth-child(4) {
+		// 		a {
+		// 		margin-right: 0;
+					
+		// 		}
+		// 	}
+		// }
+
+		a {
+			@include fontSize(10, 400);
+			color: $springblue;
+			margin: 0 1.7rem;
+			
+		}
+	}
+
+}

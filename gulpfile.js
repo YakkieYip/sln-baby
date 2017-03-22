@@ -19,7 +19,9 @@ const uglify       = require('gulp-uglify');
 gulp.task('browser-sync', () => {
 	browserSync.init({
 		// create local server and work in root of project folder
-		server: '.'
+		server: {
+			baseDir: '.'
+		}
 	})
 });
 
