@@ -1,10 +1,15 @@
+// --------------------------------------------------------
+// Winners List Section
+// --------------------------------------------------------
+
 .winners {
 	background: $eggshell;
 	padding: 4.8rem 0;
+
 	.wrapper {
 		padding: 0 2.5rem;
-		// padding: 0 1rem;	
 	}
+
 	.winners--blurb {
 		text-align: center;
 
@@ -23,10 +28,11 @@
 	}
 }
 
+// --------------------------------------------------------
 // Winners Small Cards List
+// --------------------------------------------------------
 
 .winnersList {
-	// padding: 0 2.5rem;
 	display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -40,11 +46,6 @@
 			margin-bottom: 0;
 		}
 
-		// &:nth-child(4) {
-		// 	.sml-blurb-container {
-	
-		// 	}
-		// }
 		a {
 			display: inline-block;
 			text-decoration: none;
@@ -71,7 +72,6 @@
 	.sml-blurb-container {
 		width: 55%;
 		padding: 2.4rem 2.7rem 2.4rem 3rem;
-
 		// winner name
 		h3 {
 			@include fontSize(16, 700);
@@ -85,6 +85,7 @@
 			color: $winnerloc;
 			margin: 0 0 2rem;
 		}
+		//winner description
 		p {
 			@include fontSize(13, 400);
 			font-family: 'Helvetica Neue', 'Roboto', Helvetica, Arial, sans-serif;
@@ -92,6 +93,7 @@
 			color: $winnerdesc;
 			margin: 0 0 2rem;
 		}
+		//prize value
 		h5 {
 			@include fontSize(14, 400);
 			color: $springblue;
