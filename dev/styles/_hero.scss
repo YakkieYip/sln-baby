@@ -14,13 +14,12 @@
 		background-color: $whitetext;
 		flex-wrap: nowrap;
 
-
 		.hero__lrg-card, .hero__lrg-img--container {
 			width: 50%;
 		}
 
 		.hero__lrg-img--container {
-			background: url('/public/images/featured-winner-hero.png') no-repeat center center;
+			background: url('public/images/featured-winner-hero.png') no-repeat center center;
 			background-size: cover;
 		}
 	}

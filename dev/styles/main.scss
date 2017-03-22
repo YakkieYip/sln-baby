@@ -8,8 +8,6 @@
 	font-weight: ($weight);
 }
 
-// Montserrat, Roboto, and Helvetica Neue
-
 // --------------------------------------------------------
 // CLB PAGE COLOR CODE BOX
 // --------------------------------------------------------
@@ -45,9 +43,15 @@ $address: #8899a6; // address text
 @import "winners";
 @import "clbBanner";
 @import "footer";
+
 // --------------------------------------------------------
 // MAIN GLOBAL STYLES
 // --------------------------------------------------------
+
+// Montserrat, Roboto, and Helvetica Neue
+
+// font-family: 'Helvetica Neue', 'Roboto', Helvetica, Arial, sans-serif;
+// font-family: 'Montserrat', Helvetica, Arial, sans-serif;
 
 // set default font-size to (base) 10px
 html {
@@ -56,13 +60,8 @@ html {
 
 body {
 	@include fontSize(16, 400);
-	// font-family: 'Helvetica Neue', 'Roboto', Helvetica, Arial, sans-serif;
 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
 }
-
-// h1, h2, h3, h4, h5, h6 {
-// 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-// }
 
 ul {
 	margin: 0;
@@ -79,7 +78,6 @@ img {
 
 a {
 	text-decoration: none;
-	
 	&:hover{
 		text-decoration: underline;
 	}
