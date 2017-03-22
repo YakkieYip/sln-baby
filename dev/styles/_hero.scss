@@ -1,6 +1,5 @@
 .hero {
 	padding-top: 5.2rem;
-	// padding-top: 1rem 0;
 	background-image:
 		linear-gradient(
 		   to bottom,
@@ -19,14 +18,14 @@
 		}
 
 		.hero__lrg-img--container {
-			background: url('../images/featured-winner-hero.png') no-repeat center center;
+			background: url('../../public/images/featured-winner-hero.png') no-repeat center center;
 			background-size: cover;
 		}
 	}
 
 	.hero__lrg-card {
 		padding: 0.5rem 4.8rem;
-		// border: 1px solid blue;
+
 		h1 {
 			@include fontSize(45, 400);
 			color: $smokegrey;
@@ -43,12 +42,12 @@
 			margin: 2.8rem 0;
 		}
 		
-
 		.watchVid {
 			a {
 				text-decoration: none;
 			}
 		}
+
 		.watchVid__container {
 			color: $springblue;
 			display: flex;
@@ -65,12 +64,9 @@
 
 			p {
 				@include fontSize(16, 400);
-				// margin: 1rem 0;
-				// color: $springblue;
 			}
 		}
 	}
-
 
 	.hero__lrg-img--container {
 		position: relative;
@@ -82,7 +78,6 @@
 		}
 
 		i {
-
 			color: $whitetext;
 			font-size: 5rem;
 			position: absolute;
