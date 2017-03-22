@@ -27,7 +27,7 @@ gulp.task('browser-sync', () => {
 
 // set up CSS / Sass task
 gulp.task('styles', () => {
-	return gulp.src('./dev/styles/**/*.scss')
+	return gulp.src('dev/styles/**/*.scss')
 		.pipe(plumber({
 			errorHandler: notify.onError("Error: <%= error.message %>")
 		}))
@@ -37,7 +37,7 @@ gulp.task('styles', () => {
 		.pipe(cleanCSS())
 		.pipe(concat('style.css'))
 		.pipe(sourcemaps.write('.'))
-		.pipe(gulp.dest('./public/styles'))
+		.pipe(gulp.dest('public/styles'))
 		.pipe(reload({
 			stream: true
 		}));
@@ -45,7 +45,7 @@ gulp.task('styles', () => {
 
 // set up JS task
 gulp.task('scripts', () => {
-	return gulp.src('./dev/scripts/main.js')
+	return gulp.src('dev/scripts/main.js')
 		.pipe(plumber({
 		  errorHandler: notify.onError("Error: <%= error.message %>")
 		}))
@@ -54,7 +54,7 @@ gulp.task('scripts', () => {
 		}))
 		.pipe(uglify())
 		.pipe(concat('main.min.js'))
-		.pipe(gulp.dest('./public/scripts'))
+		.pipe(gulp.dest('public/scripts'))
 		.pipe(reload({
 			stream: true
 		}));
@@ -62,17 +62,17 @@ gulp.task('scripts', () => {
 
 // set up Minify Images task
 gulp.task('images', () => {
-	return gulp.src('./dev/images/**/*')
+	return gulp.src('dev/images/**/*')
 		.pipe(imageMin())
-		.pipe(gulp.dest('./public/images'));
+		.pipe(gulp.dest('public/images'));
 });
 
 // set up our Watch task
 gulp.task('watch', () => {
-	gulp.watch('./dev/styles/**/*.scss', ['styles']);
-	gulp.watch('./dev/scripts/**/*.js', ['scripts']);
-	gulp.watch('./dev/images/**/*', ['images']);
-	gulp.watch('./**/*.html', reload);
+	gulp.watch('dev/styles/**/*.scss', ['styles']);
+	gulp.watch('dev/scripts/**/*.js', ['scripts']);
+	gulp.watch('dev/images/**/*', ['images']);
+	gulp.watch('**/*.html', reload);
 });
 
 gulp.task('default', ['browser-sync', 'styles', 'scripts', 'images', 'watch']);
