@@ -35,6 +35,7 @@ header {
 		a {
 			@include fontSize(10, 400);
 			color: $whitetext;
+			transition: background 0.5s ease;
 		}
 		
 		&:first-child {
@@ -48,6 +49,11 @@ header {
 				border-radius: 0.5rem;
 				border: 0.2rem solid white;
 				padding: 1rem 1.8rem;
+
+				&:hover {
+					background: $whitetext;
+					color: $springblue;
+				}
 			}
 		}
 	}

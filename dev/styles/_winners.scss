@@ -40,8 +40,8 @@
 
 	@media (max-width: 1100px) {
 		flex-direction: column;
-		// flex-wrap: nowrap;
-		width: 100%;
+		width: 80%;
+    	margin: 0 auto;
 	}
 
 	li {
@@ -71,9 +71,9 @@
 		.sml-img-container {
 			width: 45%;
 			
-			// @media (max-width: 1040px) {
-				
-			// }
+			@media (max-width: 1100px) {
+				width: initial;
+			}
 			
 			img {
 				height: auto;
@@ -93,14 +93,15 @@
 	flex-direction: row;
 	flex-wrap: nowrap;
 	justify-content: space-between;
-
-	// @media (max-width: 1040px) {
-	
-	// }
 		
 	.sml-blurb-container {
 		width: 55%;
 		padding: 2.4rem 2.7rem 2.4rem 3rem;
+		
+		@media (max-width: 1100px) {
+			width: initial;
+		}
+
 		// winner name
 		h3 {
 			@include fontSize(16, 700);
